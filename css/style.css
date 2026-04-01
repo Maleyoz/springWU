@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        'header'
+        'nav'
+        'goyslop'
+        'main'
+        'footer';
+}
+
+header {
+    grid-area: header;
+    padding: px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#goyslop {
+    grid-area: goyslop;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
