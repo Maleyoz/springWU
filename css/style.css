@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #96e8fbb2;
+}
+
 .wrapper {
     display: grid;
     min-height: 100vh;
@@ -12,11 +22,30 @@
 
 header {
     grid-area: header;
-    padding: px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: darkblue;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-color: white;
+    border-width: 5px;
 }
 
 nav {
     grid-area: nav;
+    background: #0d127e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #goyslop {
@@ -29,4 +58,72 @@ main {
 
 footer {
     grid-area: footer;
+    background: #0d127e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+header .logo {
+    width: 100px ;
+    margin-bottom: 15px;
+
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+
+    grid-area: top;
+    background: white;
+    padding: 60px 40px ;
+
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    grid-area: middle;
+    background: white;
+    padding: 60px 40px ;
+}
+
+
+.bottom {
+    display: grid;
+    grid-area: bottom;
+    background: white;
+    padding: 60px 40px ;
+
+}
+
+
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 15px;
+}
+
+.card {
+    background: rgb(144, 42, 218);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.card h3 {
+    color: darkblue;
 }
